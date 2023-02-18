@@ -1,0 +1,13 @@
+const { render } = require("ejs")
+
+exports.homeRoutes = ( res, req ) => {
+    res.render('index')
+}
+
+exports.add_user = (req, res) => {
+    res.render('add_user')
+}
+
+exports.update_user = (req, res) => {
+    res.render('update_user')
+}
