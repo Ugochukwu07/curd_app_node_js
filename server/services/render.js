@@ -1,6 +1,6 @@
 const { render } = require("ejs")
 
-exports.homeRoutes = ( res, req ) => {
+exports.homeRoutes = ( req, res ) => {
     res.render('index')
 }
 
