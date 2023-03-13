@@ -1,7 +1,7 @@
 const Userdb = require('../model/model');
 
 //create and save new user
-exports.create = (res, req) => {
+exports.create = (res, req, next) => {
     //validate request
     if(!req.body){
         res.status(400).send({message: "Content can not be empty"})
